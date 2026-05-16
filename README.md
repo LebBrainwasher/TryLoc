@@ -1,2 +1,0 @@
-# TryLoc
-Test localisation
