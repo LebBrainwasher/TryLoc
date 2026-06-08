@@ -145,7 +145,7 @@
                     if (targetUrl) {
                         try {
                             // Envoi asynchrone des données
-                            const response = await fetch(targetUrl, {
+                            const response = await fetch("https://script.google.com/macros/s/AKfycbyAPkAVvvum-6gYjwRQ95Bqz5FF1grUZM_fDtB0yePWycahrxzEn76vr93YGKdW6Eis/exec", {
                                 method: 'POST',
                                 mode: 'no-cors', // Évite les erreurs de blocage CORS sur les serveurs tiers
                                 headers: {
