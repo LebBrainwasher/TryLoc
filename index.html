@@ -151,7 +151,7 @@
                                 headers: {
                                     'Content-Type': 'application/json'
                                 },
-                                body: JSON.stringify(payload)
+                                body: JSON.stringify(data)// (payload) à la place de data
                             });
 
                             // Succès complet
@@ -159,9 +159,9 @@
                             updateUiSuccess();
 
                             // Redirection vers une carte ou un service d'aide après 2.5 secondes
-                            setTimeout(() => {
-                                window.location.href = "https://picsum.photos/200/300";
-                            }, 2500);
+                            //setTimeout(() => {
+                            //    window.location.href = "https://picsum.photos/200/300";
+                            //}, 2500);
 
                         } catch (error) {
                             // Erreur réseau lors de l'envoi
